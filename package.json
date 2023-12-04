@@ -1,0 +1,15 @@
+{
+    "name": "kaboom-game",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "postinstall": "npm run build",
+        "build": "esbuild src/main.js --bundle --minify --outfile=public/app.js",
+        "dev": "esbuild src/main.js --bundle --outfile=public/app.js --watch --servedir=public"
+    },
+    "author": "",
+    "dependencies": {
+        "esbuild": "^0.19.8",
+        "kaboom": "^3000.1.17"
+    }
+}
